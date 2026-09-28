@@ -1,0 +1,2 @@
+Masukkan CV PDF kamu ke folder utama dan beri nama: cv-ferdi-handoko.pdf
+Setelah itu tombol Download CV pada website akan bekerja otomatis.
