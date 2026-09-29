@@ -1,37 +1,27 @@
-// ===============================
-// KONFIGURASI PORTOFOLIO
-// Ganti nomor WhatsApp di bawah.
-// Format: kode negara + nomor tanpa tanda +, spasi, atau 0 awal.
-// Contoh Indonesia: 6281234567890
-// ===============================
-const whatsappNumber = "62085809095836";
+const whatsappNumber = "6285809095836";
 const whatsappMessage = encodeURIComponent(
-  "Halo Ferdi, saya tertarik dengan profil dan portofolio Anda."
+  "Halo Ferdi, saya melihat portofolio Anda dan tertarik untuk menghubungi Anda."
 );
 
 const waButton = document.getElementById("waButton");
 if (waButton) {
-  if (whatsappNumber.includes("X")) {
-    waButton.href = "#";
-    waButton.addEventListener("click", (e) => {
-      e.preventDefault();
-      alert("Silakan isi nomor WhatsApp kamu di file script.js terlebih dahulu.");
-    });
-  } else {
-    waButton.href = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
-  }
+  waButton.href = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 }
 
-document.getElementById("year").textContent = new Date().getFullYear();
+const year = document.getElementById("year");
+if (year) year.textContent = new Date().getFullYear();
 
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.getElementById("navLinks");
 
 menuToggle?.addEventListener("click", () => {
   const open = navLinks.classList.toggle("open");
-  menuToggle.setAttribute("aria-expanded", open);
+  menuToggle.setAttribute("aria-expanded", String(open));
 });
 
 document.querySelectorAll(".nav-links a").forEach(link => {
-  link.addEventListener("click", () => navLinks.classList.remove("open"));
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    menuToggle?.setAttribute("aria-expanded", "false");
+  });
 });

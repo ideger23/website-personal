@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portofolio online Ferdi Handoko - Fresh Graduate S1 Sistem Informasi.">
+  <meta name="description" content="Portofolio profesional Ferdi Handoko — S1 Sistem Informasi, administrasi, data, web, dan IoT.">
   <meta name="theme-color" content="#0b1220">
-  <title>Ferdi Handoko | Portofolio</title>
+  <title>Ferdi Handoko | S1 Sistem Informasi</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <header class="navbar">
     <div class="container nav-inner">
-      <a class="brand" href="#home">FH<span>.</span></a>
-      <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+      <a class="brand" href="#home" aria-label="Ferdi Handoko">FH<span>.</span></a>
+      <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false" aria-controls="navLinks">☰</button>
       <nav class="nav-links" id="navLinks">
         <a href="#about">Tentang</a>
         <a href="#experience">Pengalaman</a>
@@ -30,29 +30,34 @@
     <section class="hero" id="home">
       <div class="container hero-grid">
         <div class="hero-copy">
+          <div class="availability"><span></span> Terbuka untuk peluang kerja</div>
           <p class="eyebrow">PORTOFOLIO PROFESIONAL</p>
-          <h1>Halo, saya <span>Ferdi Handoko</span>.</h1>
-          <p class="hero-title">Fresh Graduate S1 Sistem Informasi</p>
+          <h1>Ferdi <span>Handoko</span></h1>
+          <p class="hero-title">S1 Sistem Informasi · Administrasi · Data · IT</p>
           <p class="hero-text">
-            Memiliki ketertarikan pada administrasi, pengolahan data, teknologi informasi,
-            dan pengembangan sistem. Terbiasa bekerja secara terstruktur, teliti, dan menggunakan
-            Microsoft Office untuk mendukung pekerjaan.
+            Lulusan Sistem Informasi dengan pengalaman magang, organisasi, dan proyek akademik.
+            Memiliki minat pada administrasi, pengolahan data, teknologi informasi, pengembangan web,
+            serta Internet of Things.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="cv-ferdi-handoko.pdf" download>↓ Download CV</a>
-            <a class="btn btn-secondary" href="#contact">Hubungi Saya</a>
+            <a class="btn btn-primary" href="#contact">Hubungi Saya <span>↗</span></a>
+            <a class="btn btn-secondary" href="./CV-Ferdi-Handoko.html" target="_blank" rel="noopener">Lihat CV <span>↗</span></a>
           </div>
           <div class="quick-stats">
             <div><strong>S1</strong><span>Sistem Informasi</span></div>
-            <div><strong>IoT</strong><span>Project Akademik</span></div>
-            <div><strong>Excel</strong><span>Administrasi & Data</span></div>
+            <div><strong>IoT</strong><span>Proyek Akademik</span></div>
+            <div><strong>Office</strong><span>Data & Administrasi</span></div>
           </div>
         </div>
+
         <div class="hero-photo-wrap">
           <div class="photo-card">
-            <img src="assets/profile.jpg" alt="Foto profil Ferdi Handoko">
+            <img src="./assets/profile.jpg" alt="Foto profil Ferdi Handoko" loading="eager">
           </div>
-          <div class="photo-badge">Open to Work<br><small>Admin • IT • Data</small></div>
+          <div class="photo-badge">
+            <strong>Ferdi Handoko</strong>
+            <small>Information Systems</small>
+          </div>
         </div>
       </div>
     </section>
@@ -60,28 +65,33 @@
     <section class="section" id="about">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">TENTANG SAYA</p>
-          <h2>Profil</h2>
+          <p class="eyebrow">01 · PROFIL</p>
+          <h2>Tentang Saya</h2>
         </div>
         <div class="about-grid">
-          <div class="about-card">
+          <article class="about-card">
             <p>
-              Saya merupakan lulusan S1 Sistem Informasi yang memiliki dasar pengetahuan di bidang
-              sistem informasi, administrasi, pengolahan data, dan teknologi. Selama kuliah,
-              saya mengembangkan beberapa proyek sistem informasi dan IoT serta aktif dalam organisasi
-              kampus.
+              Saya merupakan lulusan S1 Sistem Informasi yang memiliki dasar pengetahuan pada
+              sistem informasi, administrasi, pengolahan data, dan teknologi. Selama masa studi,
+              saya mengembangkan beberapa proyek berbasis web dan IoT serta aktif dalam kegiatan organisasi.
             </p>
             <p>
-              Saya tertarik pada posisi administrasi, staff kantor, admin gudang, admin sales,
-              data entry, maupun pekerjaan yang berkaitan dengan teknologi informasi.
+              Saya terbuka terhadap peluang sebagai staf administrasi, data entry, admin gudang,
+              admin sales, staf IT, maupun posisi lain yang relevan dengan kemampuan yang saya miliki.
             </p>
-          </div>
-          <div class="info-list">
+            <div class="profile-points">
+              <span>✓ Teliti dalam pengolahan data</span>
+              <span>✓ Terbiasa dengan Microsoft Office</span>
+              <span>✓ Memahami dasar web & IoT</span>
+              <span>✓ Mampu bekerja secara terstruktur</span>
+            </div>
+          </article>
+          <aside class="info-list">
             <div><span>Pendidikan</span><strong>S1 Sistem Informasi</strong></div>
-            <div><span>Fokus</span><strong>Administrasi • Data • IT</strong></div>
-            <div><span>Tools</span><strong>Excel • Word • PowerPoint</strong></div>
-            <div><span>Lokasi</span><strong>Lampung, Indonesia</strong></div>
-          </div>
+            <div><span>Bidang</span><strong>Administrasi · Data · IT</strong></div>
+            <div><span>Tools</span><strong>Word · Excel · PowerPoint</strong></div>
+            <div><span>Domisili</span><strong>Lampung, Indonesia</strong></div>
+          </aside>
         </div>
       </div>
     </section>
@@ -89,34 +99,34 @@
     <section class="section section-alt" id="experience">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">PENGALAMAN</p>
-          <h2>Pengalaman Magang & Organisasi</h2>
+          <p class="eyebrow">02 · PENGALAMAN</p>
+          <h2>Pengalaman</h2>
         </div>
         <div class="timeline">
           <article class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <span class="date">2024 • MAGANG</span>
+              <span class="date">2024 · MAGANG</span>
               <h3>Nusa Andalas Santosa Abadi / Nasa Baut Pringsewu</h3>
               <p>
-                Membantu pencatatan barang masuk dan keluar, input data stok gudang,
-                membantu proses penjualan/kasir, serta membuat laporan persediaan menggunakan Microsoft Excel.
+                Membantu pencatatan barang masuk dan keluar, input data stok gudang, membantu
+                proses penjualan/kasir, serta menyusun laporan persediaan menggunakan Microsoft Excel.
               </p>
               <div class="tags"><span>Data Entry</span><span>Excel</span><span>Administrasi</span><span>Stok</span></div>
             </div>
           </article>
+
           <article class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <span class="date">ORGANISASI KAMPUS</span>
               <h3>BEM — Komunikasi & Informasi</h3>
               <p>
-                Berkontribusi dalam kegiatan organisasi, komunikasi informasi, dan penyampaian
-                informasi kegiatan kepada mahasiswa. Aktif mendukung kegiatan kampus melalui
-                koordinasi, dokumentasi, dan penyebaran informasi kepada mahasiswa.
+                Berkontribusi dalam komunikasi informasi, koordinasi kegiatan, dokumentasi,
+                dan penyampaian informasi kegiatan kepada mahasiswa.
               </p>
               <div class="organization-photo">
-                <img src="assets/organisasi.jpg" alt="Dokumentasi kegiatan organisasi kampus Ferdi Handoko">
+                <img src="./assets/organisasi.jpg" alt="Dokumentasi kegiatan organisasi kampus" loading="lazy">
                 <span>Dokumentasi kegiatan organisasi kampus</span>
               </div>
               <div class="tags"><span>Komunikasi</span><span>Organisasi</span><span>Informasi</span></div>
@@ -129,59 +139,48 @@
     <section class="section" id="projects">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">PORTOFOLIO</p>
-          <h2>Proyek yang Pernah Dikerjakan</h2>
+          <p class="eyebrow">03 · PORTOFOLIO</p>
+          <h2>Proyek</h2>
+          <p class="section-lead">Beberapa proyek akademik dan pengembangan sistem yang pernah dikerjakan.</p>
         </div>
         <div class="project-grid">
           <article class="project-card featured">
-            <div class="project-number">01</div>
-            <div class="project-icon">⌁</div>
+            <div class="project-top"><span class="project-number">01</span><span class="project-icon">⌁</span></div>
             <h3>Smart Bell Otomatis Berbasis IoT</h3>
-            <p>
-              Perancangan sistem alarm bel sekolah otomatis untuk membantu proses pergantian jadwal
-              bel secara terjadwal dan mengurangi ketergantungan pada pengoperasian manual.
-            </p>
+            <p>Perancangan sistem alarm bel sekolah otomatis untuk membantu pengaturan jadwal bel secara terjadwal.</p>
             <ul>
               <li>ESP32 sebagai mikrokontroler</li>
               <li>RTC DS3231 untuk pengaturan waktu</li>
-              <li>DFPlayer Mini + speaker untuk audio bel</li>
-              <li>Web dashboard untuk pengelolaan sistem</li>
+              <li>DFPlayer Mini + speaker</li>
+              <li>Web dashboard untuk pengelolaan</li>
             </ul>
-            <div class="tags"><span>ESP32</span><span>IoT</span><span>Arduino IDE</span><span>Web</span></div>
+            <div class="tags"><span>ESP32</span><span>IoT</span><span>Arduino</span><span>Web</span></div>
           </article>
 
           <article class="project-card">
-            <div class="project-number">02</div>
-            <div class="project-icon">⌘</div>
+            <div class="project-top"><span class="project-number">02</span><span class="project-icon">⌘</span></div>
             <h3>Sistem Informasi Rumah Jahit</h3>
-            <p>
-              Sistem informasi berbasis web untuk membantu pengelolaan data dan aktivitas
-              operasional Rumah Jahit Asih secara lebih terstruktur.
-            </p>
+            <p>Sistem berbasis web untuk membantu pengelolaan data dan aktivitas operasional rumah jahit secara terstruktur.</p>
             <ul>
               <li>Analisis kebutuhan sistem</li>
-              <li>UML dan perancangan basis data</li>
-              <li>Implementasi aplikasi berbasis web</li>
+              <li>UML & perancangan basis data</li>
+              <li>Implementasi aplikasi web</li>
               <li>Black Box Testing</li>
             </ul>
             <div class="tags"><span>Web</span><span>Database</span><span>UML</span><span>Testing</span></div>
           </article>
 
           <article class="project-card">
-            <div class="project-number">03</div>
-            <div class="project-icon">▦</div>
+            <div class="project-top"><span class="project-number">03</span><span class="project-icon">▦</span></div>
             <h3>Pengolahan Data & Persediaan</h3>
-            <p>
-              Penggunaan Microsoft Excel untuk pencatatan, rekapitulasi, dan pelaporan
-              data persediaan selama kegiatan magang.
-            </p>
+            <p>Pencatatan, rekapitulasi, dan pelaporan data persediaan selama kegiatan magang menggunakan Microsoft Excel.</p>
             <ul>
               <li>Input barang masuk/keluar</li>
               <li>Rekap stok</li>
               <li>Laporan persediaan</li>
-              <li>Pengelolaan data terstruktur</li>
+              <li>Data terstruktur</li>
             </ul>
-            <div class="tags"><span>Microsoft Excel</span><span>Data Entry</span><span>Reporting</span></div>
+            <div class="tags"><span>Excel</span><span>Data Entry</span><span>Reporting</span></div>
           </article>
         </div>
       </div>
@@ -190,16 +189,16 @@
     <section class="section section-alt" id="skills">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">KOMPETENSI</p>
+          <p class="eyebrow">04 · KOMPETENSI</p>
           <h2>Keahlian</h2>
         </div>
         <div class="skills-grid">
-          <div class="skill-card"><div class="skill-top"><strong>Microsoft Excel</strong><span>Advanced Basic</span></div><div class="bar"><i style="width:82%"></i></div><p>Input data, rekap, stok, dan laporan.</p></div>
-          <div class="skill-card"><div class="skill-top"><strong>Microsoft Word</strong><span>Good</span></div><div class="bar"><i style="width:84%"></i></div><p>Dokumen, surat, dan pengolahan administrasi.</p></div>
-          <div class="skill-card"><div class="skill-top"><strong>PowerPoint</strong><span>Good</span></div><div class="bar"><i style="width:78%"></i></div><p>Pembuatan presentasi dan materi visual.</p></div>
-          <div class="skill-card"><div class="skill-top"><strong>Data Entry</strong><span>Good</span></div><div class="bar"><i style="width:86%"></i></div><p>Input dan pengelolaan data secara teliti.</p></div>
-          <div class="skill-card"><div class="skill-top"><strong>Administrasi</strong><span>Good</span></div><div class="bar"><i style="width:84%"></i></div><p>Pencatatan, dokumentasi, dan pelaporan.</p></div>
-          <div class="skill-card"><div class="skill-top"><strong>Web & IoT</strong><span>Basic–Intermediate</span></div><div class="bar"><i style="width:72%"></i></div><p>Dasar pengembangan web dan sistem IoT.</p></div>
+          <div class="skill-card"><div class="skill-top"><strong>Microsoft Excel</strong><span>82%</span></div><div class="bar"><i style="width:82%"></i></div><p>Input data, rekap, stok, dan laporan.</p></div>
+          <div class="skill-card"><div class="skill-top"><strong>Microsoft Word</strong><span>84%</span></div><div class="bar"><i style="width:84%"></i></div><p>Dokumen dan kebutuhan administrasi.</p></div>
+          <div class="skill-card"><div class="skill-top"><strong>PowerPoint</strong><span>78%</span></div><div class="bar"><i style="width:78%"></i></div><p>Presentasi dan materi visual.</p></div>
+          <div class="skill-card"><div class="skill-top"><strong>Data Entry</strong><span>86%</span></div><div class="bar"><i style="width:86%"></i></div><p>Input dan pengelolaan data secara teliti.</p></div>
+          <div class="skill-card"><div class="skill-top"><strong>Administrasi</strong><span>84%</span></div><div class="bar"><i style="width:84%"></i></div><p>Pencatatan, dokumentasi, dan pelaporan.</p></div>
+          <div class="skill-card"><div class="skill-top"><strong>Web & IoT</strong><span>72%</span></div><div class="bar"><i style="width:72%"></i></div><p>Dasar pengembangan web dan sistem IoT.</p></div>
         </div>
       </div>
     </section>
@@ -207,14 +206,21 @@
     <section class="cta" id="contact">
       <div class="container cta-inner">
         <div>
-          <p class="eyebrow">LET'S CONNECT</p>
-          <h2>Terbuka untuk peluang kerja baru.</h2>
-          <p>Silakan hubungi saya untuk kesempatan kerja, magang, maupun kolaborasi.</p>
+          <p class="eyebrow">05 · KONTAK</p>
+          <h2>Mari terhubung.</h2>
+          <p>Terbuka untuk peluang kerja, magang, freelance, maupun kolaborasi.</p>
         </div>
-        <div class="cta-actions">
-          <!-- Ganti nomor pada script.js dengan nomor WhatsApp kamu. -->
-          <a class="btn btn-light" id="waButton" href="#" target="_blank" rel="noopener">WhatsApp ↗</a>
-          <a class="btn btn-outline-light" href="mailto:emailkamu@example.com">Email ↗</a>
+        <div class="contact-cards">
+          <a class="contact-card" id="waButton" href="#" target="_blank" rel="noopener">
+            <span class="contact-icon">WA</span>
+            <span><small>WhatsApp</small><strong>0858 0909 5836</strong></span>
+            <b>↗</b>
+          </a>
+          <a class="contact-card" href="mailto:ferdihandoko73@gmail.com">
+            <span class="contact-icon">@</span>
+            <span><small>Email</small><strong>ferdihandoko73@gmail.com</strong></span>
+            <b>↗</b>
+          </a>
         </div>
       </div>
     </section>
@@ -223,10 +229,9 @@
   <footer>
     <div class="container footer-inner">
       <span>© <span id="year"></span> Ferdi Handoko</span>
-      <span>Portofolio • S1 Sistem Informasi</span>
+      <span>S1 Sistem Informasi · Lampung, Indonesia</span>
     </div>
   </footer>
-
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
