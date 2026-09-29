@@ -4,7 +4,7 @@
 // Format: kode negara + nomor tanpa tanda +, spasi, atau 0 awal.
 // Contoh Indonesia: 6281234567890
 // ===============================
-const whatsappNumber = "62XXXXXXXXXX";
+const whatsappNumber = "62085809095836";
 const whatsappMessage = encodeURIComponent(
   "Halo Ferdi, saya tertarik dengan profil dan portofolio Anda."
 );
